@@ -1,0 +1,21 @@
+[project]
+name = "aiflow"
+version = "0.1.0"
+description = "A Unity for AI models: make a small, private model for one business task."
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+data = [
+    "huggingface_hub>=0.24",
+    "pyarrow>=16",
+]
+
+[project.scripts]
+aiflow = "aiflow.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,9 @@
+{
+  "name": "receipt",
+  "instruction": "You read photos of receipts and invoices and extract the totals.",
+  "fields": [
+    {"name": "subtotal", "description": "amount before tax and service charges", "kind": "amount"},
+    {"name": "tax", "description": "tax amount", "kind": "amount"},
+    {"name": "total", "description": "final amount to pay", "kind": "amount"}
+  ]
+}
